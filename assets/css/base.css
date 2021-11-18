@@ -73,6 +73,7 @@ html {
     margin-top: 8px;
 }
 
+
 a {
     text-decoration: none;
     color: var(--text-color);
@@ -230,4 +231,42 @@ a {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item__link {
+    --height-pagination: 30px;
+    display: block;
+    color: #939393;
+    font-size: 2rem;
+    min-width: 40px;
+    min-height: var(--height-pagination);
+    text-align: center;
+    line-height: var(--height-pagination);
+    border-radius: 3px;
+}
+
+.pagination-item__link--active {
+    background: var(--primary-color);
+    color: var(--while-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-item__link--active:hover {
+    opacity: 0.9;
+}
+
+.pagination-item__icon {
+
 }
